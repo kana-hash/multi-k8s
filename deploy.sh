@@ -1,6 +1,7 @@
 docker build -t ymykai/multi-client:latest -t ymykai/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t ymykai/multi-server:latest -t ymykai/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t ymykai/multi-worker:latast -t ymykai/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+
 docker push ymykai/multi-client:latest
 docker push ymykai/multi-server:latest
 docker push ymykai/multi-worker:latest
